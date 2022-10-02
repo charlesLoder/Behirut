@@ -1,3 +1,5 @@
+![Behirut logo](src/assets/logo128.png)
+
 # Behirut בהירות
 
 Behirut [(clarity in Hebrew)](https://en.wiktionary.org/wiki/%D7%91%D7%94%D7%99%D7%A8%D7%95%D7%AA)
@@ -82,8 +84,6 @@ to accommodate different fonts and a different UI feel, but generally speaking, 
 to be made, especially to the TypeScript code.
 You are free to do this and publish it [(Behirut is MIT licensed)](https://github.com/basshelal/Wudooh/blob/master/LICENSE)
 but credit to Behirut would be greatly appreciated.
-
-I personally recommend [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) or [VSCode](https://code.visualstudio.com).
 
 ## Thanks
 
