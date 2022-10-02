@@ -75,14 +75,14 @@ My general rule of thumb is to be verbose to give as much detail as possible
 You are also welcome to fork this and use the same code to modify any other scripts such as
 [CJK](https://en.wikipedia.org/wiki/CJK_characters).
 Few modifications would need to be made, only the `arabicRegEx` `const` in
-[`main.ts`](https://github.com/basshelal/Wudooh/blob/master/chrome/main.ts)
+[`main.ts`](https://github.com/charlesLoder/Behirut/blob/main/src/main.ts)
 would need to change within the TypeScript code (don't forget to compile to JavaScript).
-[`popup.html`](https://github.com/basshelal/Wudooh/blob/master/chrome/popup.html),
-[`styles.css`](https://github.com/basshelal/Wudooh/blob/master/chrome/styles.css) and
-[`fonts.css`](https://github.com/basshelal/Wudooh/blob/master/chrome/fonts.css) would need to be modified
+
+`popup.html`, `styles.css` and `fonts.css` would need to be modified
 to accommodate different fonts and a different UI feel, but generally speaking, few modifications would need
 to be made, especially to the TypeScript code.
-You are free to do this and publish it [(Behirut is MIT licensed)](https://github.com/basshelal/Wudooh/blob/master/LICENSE)
+
+You are free to do this and publish it [(Behirut is MIT licensed)](https://github.com/charlesLoder/Behirut/blob/main/LICENSE)
 but credit to Behirut would be greatly appreciated.
 
 ## Thanks
