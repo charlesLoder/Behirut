@@ -1,0 +1,170 @@
+@import "animations.css";
+@import "material.css";
+@import "fonts.css";
+
+/* The main parts of the HTML, but not the items */
+header,
+body,
+footer {
+  width: 300px;
+  height: auto;
+  background-color: #efefef;
+  color: #222000;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  animation: fadeIn ease-in 500ms;
+  -webkit-animation: fadeIn ease-in 500ms;
+  -moz-animation: fadeIn ease-in 500ms;
+  -o-animation: fadeIn ease-in 500ms;
+}
+
+/* Contains the logo */
+header {
+  /* background-color: var(--primary); */
+  color: #efefef;
+  horiz-align: center;
+  vertical-align: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  margin: 1rem 0;
+  /* box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.2); */
+}
+
+#logo {
+  animation: fadeIn ease-in 1000ms;
+  -webkit-animation: fadeIn ease-in 1000ms;
+  -moz-animation: fadeIn ease-in 1000ms;
+  -o-animation: fadeIn ease-in 1000ms;
+  width: 150px;
+}
+
+.centered {
+  display: inline-list-item;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+#main {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+hr {
+  border: none;
+  border-bottom: solid 1px #ccc;
+  width: 80%;
+}
+
+a {
+  color: #3a7295;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.label {
+  float: left;
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.value {
+  float: right;
+  text-align: right;
+  font-size: 1.3em;
+}
+
+#font-select {
+  font-size: 20px;
+  font-family: "Roboto Light", sans-serif;
+  width: 80%;
+  text-align-last: center;
+  text-align: center;
+  text-align-all: center;
+  cursor: pointer;
+}
+
+#websiteIcon {
+  display: inline;
+}
+
+#website {
+  display: inline;
+  position: relative;
+  margin-left: 8px;
+  bottom: 8px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+#importButton,
+#exportButton {
+  cursor: pointer;
+}
+
+#importInput,
+#exportAnchor {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#lang-select {
+  font-size: 14px;
+  font-family: "Roboto Light", sans-serif;
+  width: 65%;
+  text-align-last: center;
+  text-align: center;
+  text-align-all: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+#lang-selectDiv:after {
+  left: 20%;
+  bottom: 14px;
+}
+
+#lang-select > option {
+  font-size: 20px;
+  text-align: center;
+  alignment: center;
+  align-self: center;
+}
+
+#lang-selectBarSpan:before {
+  left: 20%;
+}
+
+#lang-selectBarSpan:after {
+  right: 20%;
+}
+
+footer > div {
+  margin-bottom: 5px;
+}

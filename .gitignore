@@ -1,0 +1,7 @@
+node_modules
+dist/
+old/
+pages/
+pics/
+img/
+.DS_Store

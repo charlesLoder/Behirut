@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <title>Behirut</title>
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type" />
+    <link href="./css/popup.css" rel="stylesheet" />
+    <style id="customFontsStyle"></style>
+  </head>
+
+  <body>
+    <header>
+      <img alt="Behirut Logo" id="logo" src="assets/logo256.png" />
+    </header>
+
+    <!-- On off Switch -->
+    <div class="centered">
+      <label class="material-switch">
+        <input id="onOffSwitch" type="checkbox" />
+        <span title="Turn extension on or off"></span>
+      </label>
+    </div>
+
+    <div id="main">
+      <!-- Font select -->
+      <div class="select">
+        <select class="select-text" id="font-select" title="Select font">
+          <option style="font-family: 'Frank Ruehl', sans-serif" value="Frank Ruehl">
+            Frank Ruehl עִבְרִית
+          </option>
+          <option style="font-family: 'Hadasim', sans-serif" value="Hadasim">
+            Hadasim עִבְרִית
+          </option>
+          <option style="font-family: 'Keter', sans-serif" value="Keter">Keter עִבְרִית</option>
+          <option style="font-family: 'Miriam', sans-serif" value="Miriam">Miriam עִבְרִית</option>
+          <option style="font-family: 'Nachlielie', sans-serif" value="Nachlielie">
+            Nachlielie עִבְרִית
+          </option>
+          <option style="font-family: 'Shofar', sans-serif" value="Shofar">Shofar עִבְרִית</option>
+          <option style="font-family: 'Simple CLM', sans-serif" value="Simple CLM">
+            Simple CLM עִבְרִית
+          </option>
+          <option style="font-family: 'SIL Ezra', sans-serif" value="SIL Ezra">
+            SIL Ezra עִבְרִית
+          </option>
+          <option style="font-family: 'sans-serif', sans-serif" value="sans-serif">
+            Sans Serif עִבְרִית
+          </option>
+          <option style="font-family: 'Times New Roman', sans-serif" value="Times New Roman">
+            Times New Roman עִבְרִית
+          </option>
+          <option style="font-family: 'Arial', sans-serif" value="Arial">Arial עִבְרִית</option>
+          <option style="font-family: serif" value="Original">Original עִבְרִית</option>
+        </select>
+        <span class="select-bar"></span>
+      </div>
+
+      <!-- Font Size -->
+      <div class="centered width-80">
+        <label class="label">Font Size:</label>
+        <label class="value" id="sizeValue"></label>
+        <label class="pure-material-slider" style="width: 95%" title="Change font size">
+          <input id="size" max="300" min="100" name="size" type="range" />
+        </label>
+        <hr />
+      </div>
+
+      <!-- Line Height -->
+      <div class="centered width-80">
+        <label class="label">Line Height:</label>
+        <label class="value" id="heightValue"></label>
+        <label class="pure-material-slider" style="width: 95%" title="Change line height">
+          <input id="height" max="300" min="100" name="height" type="range" />
+        </label>
+        <hr />
+      </div>
+
+      <!-- Website Info -->
+      <div class="centered width-80" title="Website info">
+        <img alt="Website Icon" height="32" id="websiteIcon" src="" width="32" />
+        <p id="website">Website</p>
+      </div>
+      <hr />
+
+      <!-- Whitelist Switch -->
+      <div class="centered width-80">
+        <label class="centered" id="whitelistedLabel" style="font-size: 1.3em">
+          Running on this site</label
+        >
+      </div>
+      <label class="material-switch centered">
+        <input class="centered" id="whitelistSwitch" type="checkbox" />
+        <span title="Whitelist website"></span>
+      </label>
+      <hr />
+
+      <!-- Override Site Settings Switch -->
+      <div class="centered width-80">
+        <label class="centered" id="overrideSettingsLabel" style="font-size: 1.3em">
+          Using global settings</label
+        >
+      </div>
+      <label class="material-switch centered">
+        <input class="centered" id="overrideSettingsSwitch" type="checkbox" />
+        <span title="Use site specific settings"></span>
+      </label>
+      <hr />
+
+      <!-- Export / Import -->
+      <button class="material-button" id="importButton" title="Import settings to JSON file">
+        Import
+      </button>
+      <input accept="application/json" id="importInput" type="file" />
+      <button class="material-button" id="exportButton" title="Export settings to JSON file">
+        Export
+      </button>
+      <a id="exportAnchor"></a>
+      <br />
+      <br />
+    </div>
+
+    <footer>
+      <div class="centered">
+        <a href="custom_fonts.html" target="_blank">Add Custom Fonts</a>
+      </div>
+      <div class="centered">
+        <a href="about.html" target="_blank">About</a>
+      </div>
+      <div class="centered" style="font-family: 'Roboto Light', sans-serif">
+        <a href="https://github.com/charlesLoder/Behirut" target="_blank">By Charles Loder</a>
+      </div>
+    </footer>
+    <script src="popup.min.js"></script>
+  </body>
+</html>

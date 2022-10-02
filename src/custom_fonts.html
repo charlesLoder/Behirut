@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Custom Font Manager</title>
+    <link href="./css/custom_fonts.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style id="customFontsStyle"></style>
+    <style id="tempCustomFontsStyle"></style>
+  </head>
+
+  <body>
+    <header>
+      <div class="centered header-wrapper">
+        <img alt="logo" id="logo" src="assets/logo512.png" width="150" />
+        <h1 id="headerTitle">Custom Fonts</h1>
+      </div>
+    </header>
+
+    <template id="template">
+      <div id="rootDiv">
+        <div class="fontTest" id="templateFontTitle" wudooh="true">עִבְרִית</div>
+        <label class="material-text-field">
+          <input id="templateFontNameInput" placeholder=" " />
+          <span>Font Name (Required)</span>
+        </label>
+        <label class="material-text-field">
+          <input id="templateUrlInput" placeholder=" " />
+          <span>Font URL</span>
+        </label>
+        <label class="material-text-field">
+          <input id="templateLocalNameInput" placeholder=" " />
+          <span>Local Name</span>
+        </label>
+        <button class="material-button" id="templateDeleteButton">
+          <i class="material-icons" style="bottom: -5px">delete</i>
+        </button>
+        <span class="material-icons green" id="templateCheckIcon" title="Font Success">check</span>
+        <span class="material-icons red" id="templateErrorIcon" title="Font Error"
+          >error_outline</span
+        >
+        <div class="infoText" id="templateInfoText"></div>
+      </div>
+    </template>
+
+    <div class="centered" id="main">
+      <div id="fontsDiv"></div>
+
+      <h1>Add New Font</h1>
+
+      <div class="centered" id="addNewFontDiv">
+        <div class="fontTest" id="fontTest" wudooh="true">עִבְרִית</div>
+        <label class="material-text-field">
+          <input id="fontNameInput" placeholder=" " />
+          <span>Font Name (Required)</span>
+        </label>
+        <label class="material-text-field">
+          <input id="urlInput" placeholder=" " />
+          <span>Font URL</span>
+        </label>
+        <label class="material-text-field">
+          <input id="localNameInput" placeholder=" " />
+          <span>Local Name</span>
+        </label>
+        <button class="material-button" id="addButton">
+          <i class="material-icons" style="bottom: -5px">add</i>
+        </button>
+        <span class="material-icons green" id="checkIcon" style="display: none">check</span>
+        <span class="material-icons red" id="errorIcon" style="display: none">error_outline</span>
+        <div class="infoText" id="infoLabel"></div>
+      </div>
+
+      <div class="centered" id="guideDiv">
+        <p>Font Name: the display name for the font</p>
+        <p>Font URL: a url for a font (e.g. a Google font)</p>
+        <p>Local Name: the name of the file (e.g. SBL_Hbrw.ttf)</p>
+      </div>
+    </div>
+  </body>
+  <script src="custom_fonts.min.js"></script>
+</html>

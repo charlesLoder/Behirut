@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Behirut",
+  "short_name": "Behirut",
+  "description": "Adjust Hebrew script on webpages for greater clarity",
+  "version": "1.0",
+  "minimum_chrome_version": "35",
+  "default_locale": "en",
+  "permissions": ["storage", "tabs"],
+  "browser_action": {
+    "default_icon": "/assets/logo128.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "/assets/logo016.png",
+    "48": "/assets/logo048.png",
+    "128": "/assets/logo128.png",
+    "256": "/assets/logo256.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "run_at": "document_idle",
+      "js": ["main.min.js"],
+      "css": ["css/fonts.css"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.min.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": ["fonts/*"]
+}

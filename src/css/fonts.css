@@ -1,0 +1,67 @@
+/** Roboto (for popup UI elements) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+/* Frank Ruehl */
+@font-face {
+  font-family: "Frank Ruehl";
+  font-style: normal;
+  font-weight: normal;
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/FrankRuehlCLM-Medium.woff")
+    format("woff");
+}
+
+/* Hadasim */
+@font-face {
+  font-family: "Hadasim";
+  font-style: normal;
+  font-weight: normal;
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/HadasimCLM-Regular.woff") format("woff");
+}
+
+/* Keter */
+@font-face {
+  font-family: "Keter";
+  font-style: normal;
+  font-weight: normal;
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/KeterYG-Medium.woff") format("woff");
+}
+
+/* Miriam */
+@font-face {
+  font-family: "Miriam";
+  font-style: normal;
+  font-weight: normal;
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/MiriamCLM-Book.woff") format("woff");
+}
+
+/* Nachlielie */
+@font-face {
+  font-family: "Nachlielie";
+  font-style: normal;
+  font-weight: normal;
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/NachlieliCLM-Light.woff") format("woff");
+}
+
+/* Shofar */
+@font-face {
+  font-family: "Shofar";
+  font-style: normal;
+  font-weight: normal;
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/ShofarRegular.woff") format("woff");
+}
+
+/* Simple */
+@font-face {
+  font-family: "Simple";
+  font-style: normal;
+  font-weight: normal;
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/SimpleCLM-Medium.woff") format("woff");
+}
+
+/** SIL Ezra */
+@font-face {
+  font-family: "SIL Ezra";
+  font-style: normal;
+  font-weight: normal;
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/SILEOT.woff2") format("woff2");
+}
