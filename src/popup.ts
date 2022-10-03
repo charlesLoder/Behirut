@@ -50,8 +50,6 @@ const importButton = get<HTMLButtonElement>("importButton");
 const importInput = get<HTMLInputElement>("importInput");
 
 async function initializeUI() {
-  console.log("test");
-
   try {
     const storage: Storage = await sync.get(keys);
     const currentTabs: Tab[] = await tabs.queryCurrentTab();
