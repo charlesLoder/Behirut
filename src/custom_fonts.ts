@@ -26,7 +26,7 @@ const templateDiv = template.content.querySelector("div");
 // Use this to reduce the number of requests made to chrome storage
 let displayedFonts: string[] = [];
 
-const allWudoohFonts: string[] = [
+const allFonts: string[] = [
   "Frank Ruehl",
   "Hadasim",
   "Keter",
@@ -145,7 +145,7 @@ function displayFont(customFont: CustomFont) {
         infoText.innerText = "Font Name cannot be empty!";
         return;
       }
-      if (displayedFonts.contains(value) || allWudoohFonts.contains(value)) {
+      if (displayedFonts.contains(value) || allFonts.contains(value)) {
         infoText.style.display = "block";
         infoText.innerText = "A font with this Font Name already exists!";
         return;
@@ -211,7 +211,7 @@ function inputOnInput() {
       infoLabel.innerText = "URL and local cannot both be empty!";
       return;
     }
-    if (displayedFonts.contains(fontName) || allWudoohFonts.contains(fontName)) {
+    if (displayedFonts.contains(fontName) || allFonts.contains(fontName)) {
       infoLabel.style.display = "block";
       infoLabel.innerText = "A font with this Font Name already exists!";
       return;
@@ -239,7 +239,7 @@ async function addButtonOnClick() {
     infoLabel.innerText = "URL and local cannot both be empty!";
     return;
   }
-  if (displayedFonts.contains(fontName) || allWudoohFonts.contains(fontName)) {
+  if (displayedFonts.contains(fontName) || allFonts.contains(fontName)) {
     infoLabel.style.display = "block";
     infoLabel.innerText = "A font with this Font Name already exists!";
     return;

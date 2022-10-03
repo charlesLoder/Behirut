@@ -38,18 +38,18 @@ const htmlEditables = [
 let observer: MutationObserver;
 
 /**
- * Returns true if the passed in Node has been updated by Wudooh and false otherwise
+ * Returns true if the passed in Node has been updated by Behirut and false otherwise
  */
 function hasNodeBeenUpdated(node: Node): boolean {
-  return node.parentElement && node.parentElement.getAttribute("wudooh") === "true";
+  return node.parentElement && node.parentElement.getAttribute("behirut") === "true";
 }
 
 /**
- * Returns true if this document has already been updated by Wudooh before,
+ * Returns true if this document has already been updated by Behirut before,
  * this is done in {@linkcode notifyDocument()}
  */
 function hasDocumentBeenUpdated(): boolean {
-  return document.getElementById("wudoohMetaElement") !== null;
+  return document.getElementById("behirutMetaElement") !== null;
 }
 
 /**
@@ -146,7 +146,7 @@ async function updateByAdding(node: Node, textSize: number, lineHeight: number, 
   let newHTML: string;
   if (font === "Original") {
     newHTML =
-      "<span wudooh='true' style='" +
+      "<span behirut='true' style='" +
       "font-size:" +
       textSize +
       "em;" +
@@ -156,7 +156,7 @@ async function updateByAdding(node: Node, textSize: number, lineHeight: number, 
       "'>$&</span>";
   } else {
     newHTML =
-      "<span wudooh='true' style='" +
+      "<span behirut='true' style='" +
       "font-size:" +
       textSize +
       "em;" +
@@ -263,8 +263,8 @@ async function startObserver(textSize: number, lineHeight: number, font: string)
 async function notifyDocument() {
   if (!hasDocumentBeenUpdated()) {
     let meta = document.createElement("meta");
-    meta.id = "wudoohMetaElement";
-    meta.setAttribute("wudooh", "true");
+    meta.id = "behirutMetaElement";
+    meta.setAttribute("behirut", "true");
     document.head.appendChild(meta);
   }
 }
