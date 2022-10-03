@@ -30,5 +30,10 @@
     "scripts": ["background.min.js"],
     "persistent": false
   },
-  "web_accessible_resources": ["fonts/*"]
+  "web_accessible_resources": ["fonts/*"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "charles.w.loder@gmail.com"
+    }
+  }
 }
