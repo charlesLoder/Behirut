@@ -53,7 +53,7 @@ async function initializeUI() {
   try {
     const storage: Storage = await sync.get(keys);
     const currentTabs: Tab[] = await tabs.queryCurrentTab();
-
+    // injectCustomFonts is failing because of there is nothing in storage
     const injectedFonts: CustomFont[] = await injectCustomFonts(storage.customFonts);
     injectedFonts.forEach((customFont: CustomFont) => {
       const fontName: string = customFont.fontName;
