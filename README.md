@@ -33,6 +33,8 @@ mkdir dist
 
 [Install on Chrome](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/)
 
+**NOTE**: will not work on Firefox because Firefox does not support manifest 3
+
 ## Current Features
 
 Behirut will update all Hebrew script text across the browser and modify it according
