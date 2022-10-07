@@ -27,14 +27,18 @@
     }
   ],
   "background": {
-    "service_worker": "background.min.js"
+    "service_worker": "background.min.js",
+    "type": "module"
   },
   "web_accessible_resources": [
     {
-      "resources": ["/fonts/*"],
+      "resources": ["fonts/*"],
       "matches": ["<all_urls>"]
     }
   ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
   "browser_specific_settings": {
     "gecko": {
       "id": "charles.w.loder@gmail.com"
