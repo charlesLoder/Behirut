@@ -16,9 +16,9 @@ import {
  * If some key has not been initialized then it will create it and set it to its default value
  */
 const onInstalled = async (details) => {
-  if (details.reason == "update") {
-    tabs.create("https://wudooh.app/updated");
-  }
+  // if (details.reason == "update") {
+  //   tabs.create("https://wudooh.app/updated");
+  // }
   let storage: Storage = await sync.get(keys);
   const promises: Array<Promise<void>> = [];
   if (storage.textSize == null) promises.push(sync.set({ textSize: defaultTextSize }));

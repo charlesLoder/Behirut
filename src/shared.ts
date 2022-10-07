@@ -235,7 +235,7 @@ export class CustomFont {
 }
 
 /**
- * Represents the storage that Wudooh uses.
+ * Represents the storage that the extenstion uses.
  * This adds type and key safety to any storage modifications.
  */
 export interface Storage {
@@ -263,10 +263,10 @@ export const sync = {
       else browser.storage.sync.get(keys).then((storage) => resolve(storage as Storage));
     });
   },
-  async set(wudoohStorage: Storage): Promise<void> {
+  async set(storage: Storage): Promise<void> {
     return new Promise<void>((resolve) => {
-      if (isChromium) chrome.storage.sync.set(wudoohStorage, () => resolve());
-      else browser.storage.sync.set(wudoohStorage).then(() => resolve());
+      if (isChromium) chrome.storage.sync.set(storage, () => resolve());
+      else browser.storage.sync.set(storage).then(() => resolve());
     });
   },
 };
