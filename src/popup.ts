@@ -2,6 +2,9 @@ import {
   get,
   Storage,
   CustomFont,
+  defaultFont,
+  defaultLineHeight,
+  defaultTextSize,
   sync,
   tabs,
   Tab,
@@ -457,4 +460,36 @@ function popupAddListeners() {
   }
 }
 
-popupAddListeners();
+const initializeStorage = async () => {
+  try {
+    const storage: Storage = await sync.get(keys);
+    keys.forEach(async (k) => {
+      if (storage[k]) return;
+      if (k === "customFonts" || k === "customSettings" || k === "whitelisted") {
+        await sync.set({ [k]: [] });
+        return;
+      }
+      if (k === "font") {
+        await sync.set({ [k]: defaultFont });
+        return;
+      }
+      if (k === "lineHeight") {
+        await sync.set({ [k]: defaultLineHeight });
+        return;
+      }
+      if (k === "textSize") {
+        await sync.set({ [k]: defaultTextSize });
+        return;
+      }
+      if (k === "onOff") {
+        await sync.set({ [k]: true });
+        return;
+      }
+    });
+  } catch (error) {}
+};
+
+(async () => {
+  await initializeStorage();
+  popupAddListeners();
+})();
