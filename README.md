@@ -9,6 +9,30 @@ This project is based on [Bassam Helal's](https://github.com/basshelal) app [Wud
 
 Behirut is a fork of Wudooh for Hebrew text.
 
+## local
+
+Install
+
+```bash
+git clone https://github.com/charlesLoder/Behirut.git
+cd Behirut
+npm install
+```
+
+To build
+
+```bash
+npm run build
+```
+
+If you get an error, you may need to create a dist folder first
+
+```bash
+mkdir dist
+```
+
+[Install on Chrome](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/)
+
 ## Current Features
 
 Behirut will update all Hebrew script text across the browser and modify it according
